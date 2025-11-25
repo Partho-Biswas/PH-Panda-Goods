@@ -83,6 +83,7 @@ p {
     cursor: pointer;
     background-image: linear-gradient(90deg, #fd4c93, #ee0a61);
     box-shadow: 0 8px 20px #f885b3;
+    transform: scale(1.05);
     /* transition-duration: 0.2s; */
 }
 
@@ -121,7 +122,14 @@ p {
 
 .product-card:hover {
     cursor: pointer;
+    transform: scale(1.02);
     box-shadow: 0 8px 10px #92929280;
+
+    img {
+        transform: scale(1.1);
+        transform: rotate(360deg);
+        transition-duration: 0.5s;
+    }
 }
 
 .product-card h2 {
@@ -175,6 +183,12 @@ p {
     cursor: pointer;
     background-color: #92929210;
     box-shadow: 0 8px 10px #929292;
+
+    img {
+        transform: scale(1.1);
+        transform: translateY(-20%);
+        transition-duration: 0.5s;
+    }
 }
 
 .label-card img {
@@ -209,6 +223,7 @@ p {
 .label-info .btn:hover {
     cursor: pointer;
     box-shadow: 0 8px 10px #929292;
+    transform: scale(1.05);
 }
 
 .label-info .btn i {
@@ -264,4 +279,128 @@ p {
     background: linear-gradient(90deg, #FF589B, #FF136F);
     border: 1px solid #FF589B;
     border-radius: 0 6px 6px 0;
+}
+
+.contact-content form button:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, #ff3a89, #ce004f);
+    box-shadow: 0 8px 10px #ff3a8935;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsiveness */
+
+/* Laptop Device (993px - 1200px) */
+/* Hero
+    Hero Section এর Font প্রয়োজন অনুযায়ী ছোট করে নিবে। */
+@media screen and (max-width: 1200px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content h2 {
+        font-size: 34px;
+    }
+
+    .hero-img img {
+        width: 30vw;
+    }
+
+
+}
+
+/* Tablet Device (641px - 992px) */
+/* Categories
+    wrap হয়ে থাকবে। প্রয়োজন অনুযায়ী নিচে চলে যাবে।
+    Products
+    কার্ড গুলো নিচে নিচে অবস্থান করবে।
+    Newsletter
+    Input box প্রয়োজন অনুযায়ী ছোট করে নেবে। */
+@media screen and (max-width: 992px) {
+    .logo img {
+        width: 16vw;
+    }
+
+    .menu img {
+        width: 5vw;
+    }
+
+    #header {
+        margin-top: 22px;
+        margin-bottom: 30px;
+    }
+
+    #hero-container {
+        flex-direction: column-reverse;
+    }
+
+    .hero-img img {
+        width: 50vw;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content p {
+        width: 100%
+    }
+
+
+}
+
+/* Mobile Device (320px - 640px) */
+/* Categories
+    এক কলামে নিচে নিচে অবস্থান করবে। সম্পুর্ন width নিয়ে নিবে।
+    ভিতরের কন্টেন্ট গুলো ও এক কলামে নিচে নিচে অবস্থান করবে এবং center aligned থাকবে। ।
+    Newsletter
+    Input box এবং বাটন এক কলামে নিচে নিচে অবস্থান করবে এবং center aligned থাকবে। */
+@media screen and (max-width: 640px) {
+    .logo img {
+        width: 22vw;
+    }
+
+    .menu img {
+        width: 8vw;
+    }
+
+    .container {
+        width: 85%;
+    }
+
+    #header {
+        margin-top: 22px;
+        margin-bottom: 25px;
+    }
+
+    #hero-container {
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+        line-height: 17px;
+        margin-bottom: 12px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero-content .btn {
+        padding: 6px 28px;
+        font-size: 12px;
+    }
+
+    .hero-img img {
+        width: 56vw;
+    }
 }
