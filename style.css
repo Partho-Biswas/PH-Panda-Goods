@@ -50,7 +50,7 @@ p {
 }
 
 .hero-content h1 {
-    font-size: 56px;
+    font-size: 50px;
     font-weight: bold;
     color: #1F1F1F;
 }
@@ -84,11 +84,14 @@ p {
     background-image: linear-gradient(90deg, #fd4c93, #ee0a61);
     box-shadow: 0 8px 20px #f885b3;
     transform: scale(1.05);
-    /* transition-duration: 0.2s; */
 }
 
 .hero-img img {
     width: 400px;
+}
+
+.hero-img img:hover {
+    transform: scale(1.1);
 }
 
 .category-content {
@@ -115,7 +118,6 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 15px 46px;
-    background-color: aqua;
     width: 33%;
     border-radius: 16px;
 }
@@ -309,6 +311,37 @@ p {
         width: 30vw;
     }
 
+    .product-card {
+        padding: 15px 24px;
+    }
+
+    .product-card h2 {
+        font-size: 32px;
+    }
+
+    #watch img {
+        width: 60px;
+    }
+
+    #bag img {
+        width: 86px;
+    }
+
+    #shoes img {
+        width: 118px;
+    }
+
+    .contact-content h3 {
+        font-size: 28px;
+    }
+
+    .contact-content form input {
+        font-size: 18px;
+    }
+
+    .contact-content form button {
+        font-size: 18px;
+    }
 
 }
 
@@ -346,10 +379,81 @@ p {
     }
 
     .hero-content p {
-        width: 100%
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .product-card {
+        width: 100%;
+        padding: 15px 46px;
+    }
+
+    .category-items {
+        flex-direction: column;
+    }
+
+    .title h3 {
+        font-size: 26px;
+    }
+
+    .label-card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .label {
+        flex-direction: column;
+    }
+
+    .label-card img {
+        width: 85%;
+        padding: 18px 10px 0;
+    }
+
+    .label-img {
+        text-align: center;
+    }
+
+    .label-info {
+        padding: 0 24px 24px;
+    }
+
+    .label-info h4 {
+        font-size: 22px;
+    }
+
+    .label-info p {
+        font-size: 14px;
+    }
+
+    .label-info .btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .contact-content {
+        padding: 100px 100px;
+    }
+
+    .contact-content h3 {
+        font-size: 22px;
+    }
+
+    .contact-content p {
+        font-size: 13px;
     }
 
 
+    .contact-content form input {
+        padding: 12px 22px;
+        font-size: 14px;
+
+    }
+
+    .contact-content form button {
+        padding: 12px 32px;
+        font-size: 14px;
+    }
 }
 
 /* Mobile Device (320px - 640px) */
@@ -377,7 +481,7 @@ p {
     }
 
     #hero-container {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         padding: 20px;
     }
 
@@ -403,4 +507,66 @@ p {
     .hero-img img {
         width: 56vw;
     }
+
+    .category-items {
+        gap: 18px;
+    }
+
+    .category-content {
+        margin-bottom: 40px;
+    }
+
+    .title h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .product-card h2 {
+        font-size: 22px;
+    }
+
+    .label {
+        margin-bottom: 40px;
+        gap: 18px;
+    }
+
+    .label-info h4 {
+        font-size: 20px;
+    }
+
+    .label-info .btn {
+        padding: 8px 16px;
+        font-size: 10px;
+    }
+
+    .label-card img {
+        width: 70%;
+        max-height: 200px;
+    }
+
+    .contact-content {
+        padding: 44px 34px;
+    }
+
+    .contact-content h3 {
+        font-size: 20px;
+    }
+
+    .contact-content form {
+        flex-direction: column;
+
+    }
+
+    .contact-content form input {
+        width: 100%;
+        border-radius: 6px 6px 0 0;
+        text-align: center;
+    }
+
+    .contact-content form button {
+        width: 100%;
+        border-radius: 0 0 6px 6px;
+    }
+
+
 }
